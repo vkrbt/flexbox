@@ -26,7 +26,7 @@ var dist = {
  
 gulp.task('pug', function(){
   gulp.src(src.pug)
-    .pipe(pug())
+    .pipe(pug().on('error', pugLogger))
     .pipe(gulp.dest(dist.html))
 });
 
@@ -34,7 +34,7 @@ gulp.task('scss', function () {
   return gulp.src(src.scss.styles)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({compatibility: 'ie8'}))    
+    //.pipe(cleanCSS({compatibility: 'ie8'}))    
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(dist.css));
 });
@@ -66,5 +66,9 @@ gulp.task('webserver', function() {
       open: true
     }));
 });
+
+function pugLogger(error) {
+  console.log(error.toJSON());
+}
 
 gulp.task('default', [ 'watch', 'webserver']);

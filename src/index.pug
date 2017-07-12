@@ -1,7 +1,30 @@
 doctype html
 html(lang="en")
 head
-	meta(charset="UTF-8")
-	title Document
+  meta(charset="UTF-8")
+  title Document
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  link(rel='stylesheet', href='css/styles.css')
 body
-	
+  header.header
+    .row
+      .logo
+        img.logo__picture(src="/img/logo.png", alt="")
+        h2.logo__title theyalow
+        span.logo__subtitle Craft By Css author.com
+      ul.menu
+        li.menu__item
+          a(href="") 
+            i.fa.fa-user(aria-hidden='true')
+            | about us
+        li.menu__item
+          a(href="") 
+            i.fa.fa-user(aria-hidden='true')
+            | services
+        li.menu__item
+          a(href="") 
+            i.fa.fa-user(aria-hidden='true')
+            | contact
+    .row
+      .video
+      .tagline

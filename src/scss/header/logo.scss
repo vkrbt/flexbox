@@ -1,0 +1,46 @@
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo__picture{
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url('/img/logo_bg.png');
+  background-position: center;
+}
+
+.logo__title,
+.logo__subtitle{
+  text-transform: uppercase;
+}
+
+.logo__title{
+  color:#fff;
+  font-family: 'Lucida Sans';
+  font-style: italic;
+  font-size: 3.2em;
+}
+
+.logo__subtitle{
+  align-self: flex-end;
+  color: #d0cbcb;
+  font-family: 'Lucida Sans';
+  font-size: .7em;
+}
+.menu{
+  display: flex;
+  flex-grow: 0.1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__item{
+  line-height: 2;
+}
