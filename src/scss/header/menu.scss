@@ -1,0 +1,21 @@
+@import '../vars';
+.menu {
+  display: flex;
+  flex-grow: 0.1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    background-color: $main-yellow;
+    line-height: 2;
+  }
+  &__link {
+    color: $dark-yellow;
+  }
+  &__item + &__item {
+    border-left: 1px solid $dark-yellow;
+  }
+}

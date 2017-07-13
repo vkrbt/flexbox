@@ -1,13 +1,15 @@
 @import 'header/logo';
 @import 'header/menu';
 @import 'header/tagline';
-.header{
+@import 'header/row';
+.header {
   display: flex;
   justify-content: flex-start;
-  flex-flow:column wrap;
+  flex-flow: column wrap;
   width: 100%;
   height: 565px;
   background-image: url('/img/header_bg.png');
   background-size: cover;
   background-position: center;
+  padding-top: 17px;
 }

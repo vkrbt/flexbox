@@ -1,0 +1,18 @@
+@import '../vars';
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__first-line,
+  &__second-line {
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+  &__first-line {
+    color: $main-yellow;
+  }
+  &__second-line {
+    color: #fff;
+  }
+}

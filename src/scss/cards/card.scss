@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $dark-orange;
+}
+
+.card + .card {
+  margin-left: 25px;
+}
+
+.card__description,
+.card__movie,
+.card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 312px;
+}
+
+.card__icon {
+  font-size: 6em;
+  color: #c18000;
+}
+
+.card__description {
+  text-align: center;
+  color: #fff;
+}

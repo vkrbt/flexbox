@@ -7,24 +7,60 @@ head
   link(rel='stylesheet', href='css/styles.css')
 body
   header.header
-    .row
-      .logo
-        img.logo__picture(src="/img/logo.png", alt="")
-        h2.logo__title theyalow
-        span.logo__subtitle Craft By Css author.com
-      ul.menu
-        li.menu__item
-          a(href="") 
-            i.fa.fa-user(aria-hidden='true')
-            | about us
-        li.menu__item
-          a(href="") 
-            i.fa.fa-user(aria-hidden='true')
-            | services
-        li.menu__item
-          a(href="") 
-            i.fa.fa-user(aria-hidden='true')
-            | contact
-    .row
-      .video
-      .tagline
+    .container
+      .header__row
+        .logo
+          img.logo__picture(src="/img/logo.png", alt="")
+          h2.logo__title theyalow
+          span.logo__subtitle Craft By Css author.com
+        ul.menu
+          li.menu__item
+            a.menu__link(href="") 
+              i.fa.fa-user(aria-hidden='true')
+              | about us
+          li.menu__item
+            a.menu__link(href="") 
+              i.fa.fa-wrench(aria-hidden='true')
+              | services
+          li.menu__item
+            a.menu__link(href="") 
+              i.fa.fa-envelope(aria-hidden='true')
+              | contact
+      .header__row
+        .video 
+          img(src="/img/video.png", alt="")
+        .tagline
+          p.tagline__first-line The cool
+          p.tagline__second-line The minimal
+  section.icons
+    .icons__item
+      i.fa.fa-cloud-download.icons__icon(aria-hidden='true')
+      span better design
+    .icons__item
+      i.fa.fa-leaf.icons__icon(aria-hidden='true')
+      span customize
+    .icons__item
+      i.fa.fa-paper-plane.icons__icon(aria-hidden='true')
+      span it's free
+  section.cards
+    .container
+      h2.cards__heading Lorem ipsum dolor sit amet
+      .row
+        .card
+          p.card__description
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar efficitur nulla, porta.
+          .card__movie
+            img(src="/img/cards_video.png", alt="")
+        .card
+          .card__icon
+            i.fa.fa-twitter(aria-hidden='true')
+  section.advantages
+    .container
+      h2.advantages__heading Lorem ipsum dolor sit amet
+      .row
+        img(src="/img/adv.png", alt="")
+        ul.list
+          li.list__item Sed ut perspiciatis unde omnis
+          li.list__item Lorem ipsum dolor sit amet, consectetur adipisicing 
+          li.list__item Sed ut perspiciatis unde omnis
+          li.list__item Lorem ipsum dolor sit amet, consectetur adipisicing 

@@ -1,0 +1,11 @@
+@import 'cards/card';
+.cards {
+  display: flex;
+  flex-direction: column;
+  height: 508px;
+  background-image: url('/img/bg-yellow.png');
+}
+
+.cards__heading {  
+  color: #fff;
+}

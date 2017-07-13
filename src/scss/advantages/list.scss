@@ -1,0 +1,17 @@
+@import '../vars';
+.list {
+  &__item {
+    position: relative;
+    color: #a9a9a7;
+    font-size: 1.1em;
+  }
+}
+
+.list__item::before {
+  content: '●';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  color: $main-yellow;
+}

@@ -1,4 +1,29 @@
-a{
+@import 'vars';
+a {
   display: block;
-  color:#fff;
+  text-decoration: none;
+  color: #fff;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+li {
+  font-family: $main-font;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 3;
+  text-transform: uppercase;
 }
