@@ -6,6 +6,7 @@
     width: 80px;
     height: 80px;
     background-image: url('/img/logo_bg.png');
+    background-size: cover;
     background-position: center;
   }
   &__title,
@@ -19,8 +20,7 @@
     font-size: 3.2em;
   }
   &__subtitle {
-    align-self: flex-end;
     color: #d0cbcb;
-    font-size: .7em;
+    font-size: 0.2em;
   }
 }

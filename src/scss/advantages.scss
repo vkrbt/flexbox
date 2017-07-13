@@ -1,6 +1,8 @@
 @import 'advantages/list';
 .advantages {
+  display: flex;
   background-image: url('/img/adv-bg.png');
+  height: 497px;
 }
 
 .advantages__heading {
