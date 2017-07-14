@@ -1,4 +1,32 @@
+@import '../../vars';
+.video-container {
+  position: relative;
+}
+
 .video {
+  width: 100%;
+  height: auto;
+}
+
+.video-controls {
   display: flex;
-  flex-grow: 1;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: ease-in 0.2s;
+}
+
+.video-container:hover .video-controls {
+  opacity: .9;
+}
+
+.play-pause {
+  color: #fff;
+  background: $main-yellow;
+}
+
+.volume-bar{
+  max-width: 20%;
 }

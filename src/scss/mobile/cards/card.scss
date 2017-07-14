@@ -11,7 +11,7 @@
 .card--orange {
   background-color: #f5c507;
   height: 312px;
-  @media (max-width: 480px){
+  @media (max-width: 480px) {
     height: 200px;
   }
 }
@@ -30,3 +30,4 @@
 .card__movie * {
   width: 100%
 }
+

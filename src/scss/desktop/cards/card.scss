@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
   background-color: $dark-orange;
+  position: relative;
 }
 
 .card + .card {
@@ -24,6 +25,14 @@
 }
 
 .card__description {
+  position: relative;
   text-align: center;
   color: #fff;
+}
+
+.card__plus {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: rgba(255, 255, 255, 0.8);
 }

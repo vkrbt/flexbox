@@ -1,4 +1,5 @@
 @import 'vars';
+@import '../input';
 a {
   display: block;
   text-decoration: none;
@@ -24,6 +25,12 @@ h2 {
 * {
   background-position: center;
 }
+
+button {
+  border: none;
+}
+
+
 
 @media (max-width: 480px){
   p, li{
