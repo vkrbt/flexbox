@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i');
+@import 'vars';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700');
 @import 'reset';
 @import './node_modules/font-awesome/scss/font-awesome';
-@import 'base';
+
 @import 'row';
-@import 'header';
-@import 'icons';
-@import 'cards';
-@import 'advantages';
-@import 'footer';
+
+@import 'desktop/base';
+@import 'desktop/header';
+@import 'desktop/icons';
+@import 'desktop/cards';
+@import 'desktop/advantages';
+@import 'desktop/footer';
+@media (max-width: $media-breakpoint) {
+  @import 'mobile/base';
+  @import 'mobile/header';
+  @import 'mobile/icons';
+  @import 'mobile/cards';
+  @import 'mobile/advantages';
+  @import 'mobile/footer';
+}

@@ -9,7 +9,7 @@ body
   header.header
     .container
       .header__row
-        .logo
+        .logo.logo--header
           img.logo__picture(src="/img/logo.png", alt="")
           h2.logo__title theyalow
             sub.logo__subtitle Craft By Css author.com
@@ -33,38 +33,41 @@ body
           p.tagline__first-line The cool
           p.tagline__second-line The minimal
   section.icons
-    .icons__item
-      i.fa.fa-cloud-download.icons__icon(aria-hidden='true')
-      span better design
-    .icons__item
-      i.fa.fa-leaf.icons__icon(aria-hidden='true')
-      span customize
-    .icons__item
-      i.fa.fa-paper-plane.icons__icon(aria-hidden='true')
-      span it's free
+    .container.container--icons
+      .icons__item
+        i.fa.fa-cloud-download.icons__icon(aria-hidden='true')
+        span better design
+      .icons__item
+        i.fa.fa-leaf.icons__icon(aria-hidden='true')
+        span customize
+      .icons__item
+        i.fa.fa-paper-plane.icons__icon(aria-hidden='true')
+        span it's free
   section.cards
     .container
       h2.cards__heading Lorem ipsum dolor sit amet
-      .row
+      .row.row--cards
         .card
           p.card__description
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar efficitur nulla, porta.
           .card__movie
             img(src="/img/cards_video.png", alt="")
-        .card
+        .card.card--orange
           .card__icon
             i.fa.fa-twitter(aria-hidden='true')
   section.advantages
     .container
       h2.advantages__heading Lorem ipsum dolor sit amet
       .row
-        img(src="/img/adv.png", alt="")
+        .advantages__image
+          img(src="/img/adv.png", alt="")
         ul.list
           li.list__item Sed ut perspiciatis unde omnis
           li.list__item Lorem ipsum dolor sit amet, consectetur adipisicing 
           li.list__item Sed ut perspiciatis unde omnis
           li.list__item Lorem ipsum dolor sit amet, consectetur adipisicing
   footer.footer
-    .logo
-      img.logo__picture(src="/img/logo.png", alt="")
+    .logo.logo--footer
+      .logo__picture
+        img(src="/img/logo.png", alt="")
       h2.logo__title theyalow

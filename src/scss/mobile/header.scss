@@ -1,0 +1,15 @@
+@import 'header/logo';
+@import 'header/menu';
+@import 'header/tagline';
+@import 'header/row';
+@import 'header/video';
+.header {
+  padding-top: 0;
+  height: auto;
+  background: none;
+}
+
+.logo,
+.menu {
+  flex-grow: 1;
+}

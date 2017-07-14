@@ -1,0 +1,13 @@
+@import 'cards/card';
+.cards {
+  background: none;
+  height: auto;
+}
+
+.row--cards {
+  flex-direction: column;
+}
+
+.cards__heading {
+  display: none;
+}

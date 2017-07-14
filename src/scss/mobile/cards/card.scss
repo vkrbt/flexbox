@@ -1,0 +1,32 @@
+.card {
+  width: auto;
+  margin: 1% 0;
+  background: none;
+}
+
+.card + .card {
+  margin: 0;
+}
+
+.card--orange {
+  background-color: #f5c507;
+  height: 312px;
+  @media (max-width: 480px){
+    height: 200px;
+  }
+}
+
+.card__description {
+  font-weight: 300;
+  font-size: 1.4em;
+  background-color: $dark-orange;
+}
+
+.card__description,
+.card__movie {
+  width: 49%;
+}
+
+.card__movie * {
+  width: 100%
+}

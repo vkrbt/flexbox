@@ -1,10 +1,11 @@
-@import '../vars';
+@import '../../vars';
 .menu {
   display: flex;
   flex-grow: 0.1;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-shadow: -5px -5px 0px 0px rgba($main-yellow, 0.75), -10px -10px 0px 0px rgba($main-yellow, 0.5);
   &__item {
     display: block;
     flex-grow: 1;
